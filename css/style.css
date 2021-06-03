@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Days;
+    src: url("../fonts/DaysOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+h1 , h2 , h3 , h4 , h5 , h6{
+    font-family: Days;
+}
+
+iframe{
+    border-radius: 1em;
+    width: 100%;
+    height:15em;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+a{
+    text-decoration: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+body{
+    background: #212529;
+    font-family: Montserrat;
+    color:#fff;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header h1{
+    text-align: center;
+    padding:25% 0 5% 0;
+    color:#fff;
+}
+
+main{
+    width: 100%;
+    padding: 2rem 0;
+}
+
+main .col-md-4 {
+    margin: 1rem 0;
+}
+
+
+
+#parallax-bg{
+    width: 100%;
+    height: auto;
+    padding: 2rem 0;
+    color:#fff;
+    background: url("../img/bg2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+#about{
+    padding:3rem 0;
+}
+
+#about h1{
+    margin-bottom: 1rem;
+}
+
+.card{
+    margin-bottom: 5%;
+    border-radius: 1rem;
+    background: linear-gradient(45deg , #3a6186 , #89253e);
+}
+
+#creators{
+    padding: 0 0 3rem 0;
+}
+
+#creators img{
+    filter:sepia(75%);
+    border-radius: 50%;
+    transition: all ease-in 0.3s;
+    width:60%;
+}
+
+#creators img:hover{
+    filter:sepia(0%);
+    transition: all ease-in 0.3s;
+
+}
+
+#creators svg{
+    color:#fff;
+    margin-left:0.5rem;
+    transition: all ease-in 0.3s;
+}
+
+#creators svg:hover{
+    transition: all ease-in 0.3s;
+}
+
+#creators .col-md-6:first-child svg:hover{
+    color:#0088cc;
+}
+
+#creators .col-md-6:last-child svg:hover{
+    color:#c13584;
+}
+
+
+@media screen and (max-width:576px), only screen and (max-device-width:576px) {
+    header{
+        background-size: cover;
+        height: 120vh;
+    }
+
+    header h1{
+        padding: 20% 0 5% 0;
+    }
+
+    #creators .col-sm-6{
+        margin: 0 0 3rem 0;
+    }
+}
